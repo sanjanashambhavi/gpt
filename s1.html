@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function getvalues()
+{
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+
+localStorage.setItem("name",name);
+localStorage.setItem("email",email);
+return;
+}
+</script>
+</head>
+<body bgcolor="pink">
+<form action="s.html">
+<h1>registration form</h1>
+name:<input type="textbox" id="name" name="name" placeholder="name"><br>
+email:<input type="textbox" id="email" name="email" pattern="[^@]*@[^@]*" placeholder="email"><br>
+<input type="submit" value="submit" onclick="getvalues()">
+</form>
+</body>
+</html>
